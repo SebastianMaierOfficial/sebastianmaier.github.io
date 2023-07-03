@@ -3,5 +3,18 @@
 <body>
 <h1>Hello World</h1>
 <p>I'm hosted with GitHub Pages.</p>
+<script type="module">
+  import Chatbot from "https://sebastianmaierofficial.github.io/sebastianmaier.github.io/web.js";
+  Chatbot.initFull({
+    chatflowid: "8ea8f18a-c57c-4b07-8a1a-5d34bf0e1e70",
+       headers: { Authorization: "Bearer xHPkdiqdJWEbJomYE8x0WaxU1LjkDHRkxqWBJYqnUGc=" },
+        apiHost: "https://flow.ki-erfolg.com",
+        chatflowConfig: {
+            memoryKey: "chat_history",
+            inputKey: "input"
+        },
+  });
+</script>
+<flowise-fullchatbot></flowise-fullchatbot>
 </body>
 </html>
